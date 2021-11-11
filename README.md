@@ -34,14 +34,14 @@ This is the result of an initial GSoC contribution by @[ah450](https://github.co
 
 # Features
 
-* API to create and manipulate SPDX documents.
+* API to create and manipulate SPDX documents
 * Parse and create Tag/Value, RDF, JSON, YAML, XML format SPDX files
 
 
 # TODOs
 
-* Update to full SPDX v2.1
-* Add to full license expression support
+* Update to full SPDX v2.1.
+* Add to full license expression support.
 
 
 # How to use
@@ -60,15 +60,15 @@ Try running :   `parser --file data/SPDXRdfExample.rdf`.
 2. **CONVERTOR** (for converting one format to another):
 * If I/O formats are known:
     
-    * Use `convertor --infile/-i <input_file> --outfile/-o <output_file>` where `<input_file>` is the location of the file to be converted 
-    (Note: only RDF and Tag formated supported) and `<output_file>` is the location of the output file.  
+    * Use `convertor --infile/-i <input_file> --outfile/-o <output_file>` where `<input_file>` is the location of the file to be converted. 
+    (Note: only RDF and Tag formates are supported) and `<output_file>` is the location of the output file.  
     Try running : `convertor --infile data/SPDXRdfExample.rdf --outfile output.json` 
 
 * If I/O formats are not known:
 
     * Use `convertor --from/-f <input_format> <input_file> --to/-t <output_format> <output_file>` where `<input_format>` is the manually enterred format of the input file (can be either rdf or tag)
     and `<out_format>` (can be tag, rdf, json, yaml, xml) is the manually enterred format of the output file. 
-    Try running : `convertor --from tag data/SPDXTagExample.in --to yaml output.out` 
+    Try running : `convertor --from tag data/SPDXTagExample.in --to yaml output.out` .
 
 * If anyone format is known and other is not, you can use the mixture of the above two points.      
 Ex. : `convertor -f rdf data/SPDXRdfExample.xyz -o output.xml`
@@ -87,7 +87,7 @@ instead of `bin`.
 
 # How to run tests
 
-Tests framework is using pytest
+The tests framework uses pytest.
 
 ```
 pip install pytest
@@ -120,7 +120,7 @@ So, whenever we have to make some changes to the code, we should follow these st
     ```
 
 Besides this, another requirement is that every change should be made to fix or close an issue: https://guides.github.com/features/issues/
-If there is no issue for the changes that you want to make, create first an issue about it that describes what needs to be done, assign it to yourself, and then start working for closing it.
+If there is no issue for the changes that you want to make, first create an issue that describes what needs to be done, assign it to yourself, and then start working on closing it.
 
 
 # Dependencies
